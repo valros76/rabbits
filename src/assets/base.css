@@ -82,7 +82,6 @@ h6 {
 
 p,
 li{
-  width:max-content;
   max-width:40rem;
 }
 
@@ -188,15 +187,22 @@ blockquote {
   padding-inline: var(--spacing-m);
 
   .main-menu-links {
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
     font-size: .9rem;
     font-weight: 600;
   }
 }
 
 main {
-  width:max-content;
   max-width: 100%;
   min-height:100dvh;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:stretch;
   margin-inline: auto;
   padding-block:var(--spacing-xxl);
 }
@@ -212,7 +218,6 @@ main {
 }
 
 .main-articles {
-  width: max-content;
   max-width:calc(100% - var(--spacing-xl));
   display:flex;
   flex-direction:column;
